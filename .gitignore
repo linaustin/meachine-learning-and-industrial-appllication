@@ -1,4 +1,5 @@
 /course material/*
+/cache/*
 *.png
 *.jpg
 *.pdf

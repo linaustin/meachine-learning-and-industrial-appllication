@@ -120,5 +120,4 @@ if __name__ == '__main__':
         print(f'{knn_distance[i].weight} , KNN={knn_distance[i].neighbor_number}, ', end='')
         print('x_test/x_train score = ', end= '')
         print(f'{knn_distance[i].score(x_test, y_test):.2f}/{knn_distance[i].score(x_train, y_train):.2f}')
-
-
+        
