@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 from ML_tool import file_tool
-from ML_tool import knn_tool
+from ML_tool import knn
 
 # %%
 input_file = file_tool.input_file('./0811074_linyuanchi_iris_data.csv')
@@ -12,7 +12,7 @@ data_list = input_file.sort_iris_data()
 iris_data = np.array(data_list)
 
 # %%
-knn_model = knn_tool.knn(5)
+knn_model = knn.knn(5)
 
 while True:
     np.random.shuffle(iris_data)

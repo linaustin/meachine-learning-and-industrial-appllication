@@ -1,6 +1,6 @@
 # %%
 from ML_tool import file_tool
-from ML_tool import ridge_tool
+from ML_tool import ridge
 from sklearn.model_selection import train_test_split
 import numpy as np
 
@@ -20,7 +20,7 @@ x_train, x_test, y_train, y_test = train_test_split(raw_x_data, raw_y_data, test
 print(x_train.shape)
 print(x_test.shape, end='\n\n')
 
-ridge_reg = ridge_tool.ridge_regression(1)
+ridge_reg = ridge.ridge_regression(1)
 train_score, valid_score = ridge_reg.cross_valid(x_train, y_train)
 print('')
 
